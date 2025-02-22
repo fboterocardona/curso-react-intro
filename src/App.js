@@ -4,7 +4,7 @@ import { TodoList } from './TodoList';
 import { TodoItem } from './TodoItem';
 import { CreateTodoButton } from './CreateTodoBUtton';
 import './App.css';
-import React from 'react';
+
 
 const defaultTodos = [
   { text: "Tomar Curso Basico de React", completed: false},
@@ -13,7 +13,7 @@ const defaultTodos = [
 
 function App() {
   return (
-    <React.Fragment>
+    <>
       <TodoCounter
         completed={3}
         total={7}
@@ -31,7 +31,7 @@ function App() {
       </TodoList>
 
       <CreateTodoButton/>
-    </React.Fragment>
+    </>
   );
 }
 
